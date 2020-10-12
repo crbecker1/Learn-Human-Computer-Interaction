@@ -311,7 +311,7 @@ header .heading {
 
 header .subheading {
 	color:white;
-	opacity: .5;
+	opacity: .8;
 	font-size:36px;
 	margin:10px 0px 30px;
 }
@@ -611,12 +611,15 @@ footer .social a.twitter:before {background:#55acee;}
 footer .social a.dribbble:before {background:#ea4c89;}
 footer .social a.vine:before {background:#00b488;}
 footer .social a.google-plus:before {background:#dd4b39;}
+footer .social a.quora:before {background:#B20101;}
+footer .social a.linkedin:before {background:#2B3595;}
 
 footer .social a.facebook:active {color:#3b5998;}
 footer .social a.twitter:active {color:#55acee;}
 footer .social a.dribbble:active {color:#ea4c89;}
 footer .social a.vine:active {color:#00b488;}
 footer .social a.google-plus:active {color:#dd4b39;}
+footer .social a.quora:active {background:#2B3595;}
 
 /* Custom Styles */
 @media(max-width:768px) {
