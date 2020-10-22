@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/et-icons.css">
@@ -18,33 +19,132 @@
 <body>
 <div id="wrapper" class="behind">
 
-<nav class="navbar navbar-default">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img src="img/logo-2.png" alt=""></a>
+<!--If you are reading this code you are won the prize. Pat your self on the back and send me an email crbecker1@gmail.com subject: easter egg along with your mailing address and I will send you a little gift. It could maybe even be my book.-->
+
+<!--
+<nav class="navigation-tab">
+	<div class="navigation-tab-item active">
+		<span class="navigation-tab__icon">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				  height="32"
+				  viewBox="0 0 24 24"
+				  fill="none"
+				  stroke="currentColor"
+				  stroke-width="2"
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  class="feather feather-list"
+			>
+				  <line x1="8" y1="6" x2="21" y2="6"></line>
+				  <line x1="8" y1="12" x2="21" y2="12"></line>
+				  <line x1="8" y1="18" x2="21" y2="18"></line>
+				  <line x1="3" y1="6" x2="3" y2="6"></line>
+				  <line x1="3" y1="12" x2="3" y2="12"></line>
+				  <line x1="3" y1="18" x2="3" y2="18"></line>
+			</svg>
+			</span>
+		<span class="navigation-tab__txt">Home</span>
+	</div>
+	<div class="navigation-tab-item">
+		<span class="navigation-tab__icon">
+			<svg 
+			height='32px' 
+			width='32px'  
+			fill="#000000" 
+			xmlns="http://www.w3.org/2000/svg" 
+			data-name="Layer 1" 
+			viewBox="0 0 24 24" 
+			x="0px" 
+			y="0px"
+			>
+			 <path d="M53.76,21.3l-.1-.07-.1-.07a6.42,6.42,0,0,0-7.12,0l-.1.07-.1.07L24.47,37.16,22,39V72a8,8,0,0,0,8,8H70a8,8,0,0,0,8-8V39l-2.47-1.8ZM72,72a2,2,0,0,1-2,2H30a2,2,0,0,1-2-2V42L49.77,26.15a.42.42,0,0,1,.46,0L72,42Z"></path>
+			</svg>
+			  </span>
+		  <span class="navigation-tab__txt">Tags</span>
 		</div>
-	
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right main-nav">
-				<li><a href="#book" class="scrollto">Book</a></li>
-				<li><a href="#reviews" class="scrollto">Reviews</a></li>
-				<li><a href="#author" class="scrollto">Author</a></li>
-				<li><a href="#contact" class="scrollto">Contact</a></li>
-				<li><a href="#" class="btn btn-orange">Purchase Book</a></li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+		<div class="navigation-tab-item">
+		  <span class="navigation-tab__icon">
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="32"
+				  height="32"
+				  viewBox="0 0 24 24"
+				  fill="none"
+				  stroke="currentColor"
+				  stroke-width="2"
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  class="feather feather-shopping-bag"
+				>
+				  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+				  <line x1="3" y1="6" x2="21" y2="6"></line>
+				  <path d="M16 10a4 4 0 0 1-8 0"></path>
+				</svg>
+			  </span>
+		  <span class="navigation-tab__txt">Bag</span>
+		</div>
+	<div class="navigation-tab-item">
+		<span class="navigation-tab__icon">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				height="32"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-bell"
+			>
+				<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+				<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+			</svg>
+		</span>
+		<span class="navigation-tab__txt">Notifications</span>
+		</div>
+	<div class="navigation-tab-overlay"></div>
 </nav>
+-->
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	  <a class="navbar-brand scrollto" href="#intro">Learn HCI</a>
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-toggle="collapse"
+		data-target="#navbarNav"
+		aria-controls="navbarNav"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<i class="fas fa-bars"></i>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active scrollto" aria-current="page" href="#book">About the Book</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link scrollto" href="#reviews">Reviews</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link scrollto" href="#author">About the Author</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link scrollto" href="#final">Get the Book</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link scrollto" href="#contact">Contact Me</a>
+		  </li>
+	  </div>
+	</div>
+  </nav>
 
-
-<header>
+<header id="intro">
 	<div class="container">
 			<div class="col-md-6 col-sm-12 wow animated fadeInUp">
 				<div class="intro-book">
@@ -168,6 +268,8 @@
 	</div>
 </section>
 
+<hr> 
+
 <section id="author">
 	<div class="container">
 		<div class="row">
@@ -211,7 +313,7 @@
 	</div>
 </section>
 
-<section class="call-to-action">
+<section id = "final" class="call-to-action">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 text-left text-center-mobile wow animated fadeInUp">
@@ -225,23 +327,7 @@
 	</div>
 </section>
 
-<section id="sample-form">
-	<div class="container">
-		<form id="submit-frm" action="php/sampleMail.php" method="post" class="sample-form">
-			<div class="row">
-				<div class="col-sm-5">
-					<input type="text" class="form-control" name="firstname" placeholder="Name" data-validation="required">
-				</div>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" name="email" placeholder="Email" data-validation="email">
-				</div>
-				<div class="col-sm-2">
-					<input type="submit" class="btn btn-green sign-up-button sample-button-done" value="Subscribe">
-				</div>
-			</div>
-		</form>
-	</div>
-</section>
+<hr> 
 
 <section id="contact">
 	<div class="container">
@@ -255,40 +341,17 @@
 					California, USA</p>
 				</div>
 				<div class="details">
+					<h5 class="subheading no-margin"><br>
+						Email:</h5>
 					<h4 class="subheading accent no-margin wow animated fadeInUp"><br>
 					crbecker1@gmail.com</h4>
 				</div>
 			</div>
-			<form action="php/newMail.php" method="post" class="mail-form">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-sm-6">
-							<input name="firstname" type="text" class="form-control" placeholder="Name" data-validation="required">
-						</div>
-						<div class="col-sm-6">
-							<input name="email" type="text" class="form-control" placeholder="Email" data-validation="email">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<input name="subject" type="text" class="form-control" placeholder="Subject" data-validation="required">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<textarea name="body" class="form-control" rows="10" placeholder="Message. . ." data-validation="required"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12.text-left">
-							<input type="submit" class="btn btn-orange contact-button" value="Send">
-						</div>
-					</div>
-				</div>
-			</form>
 		</div>
 	</div>
 </section>
+
+<hr> 
 
 <footer>
 	<div class="container">
@@ -323,6 +386,7 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/nav.js"></script>
 <script src="js/jquery.onepagenav.js"></script>
 <script src="js/core.js"></script>
 <script src="js/tooltip.js"></script>
@@ -333,3 +397,5 @@
 
 </body>
 </html>
+
+<!--Copyright © 2020 Chris R. Becker - All rights reserved!-->

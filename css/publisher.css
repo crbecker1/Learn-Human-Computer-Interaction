@@ -306,7 +306,8 @@ header .heading {
 	font-family:'IBM Plex Sans SemiBold';
 	color:white;
 	font-size:48px;
-	margin:10px 0;
+	margin-top:100px 0;
+	margin-bottom: 10px 0;
 }
 
 header .subheading {
