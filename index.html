@@ -15,11 +15,54 @@
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link id="main" rel="stylesheet" type="text/css" href="css/publisher.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+/// some script
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+	///////////////// fixed menu on scroll for desctop
+    if ($(window).width() > 992) {
+        
+        var navbar_height =  $('.navbar').outerHeight();
+
+        $(window).scroll(function(){  
+            if ($(this).scrollTop() > 300) {
+				 $('.navbar-wrap').css('height', navbar_height + 'px');
+                 $('#navbar_top').addClass("fixed-top");
+                 
+            }else{
+                $('#navbar_top').removeClass("fixed-top");
+                $('.navbar-wrap').css('height', 'auto');
+            }   
+        });
+    } // end if
+
+	
+}); // jquery end
+</script>
+
+<style type="text/css">
+
+.fixed-top.navbar{ padding:0px;  }
+
+</style>
 </head>
 <body>
 <div id="wrapper" class="behind">
 
-<!--If you are reading this code you are won the prize. Pat your self on the back and send me an email crbecker1@gmail.com subject: easter egg along with your mailing address and I will send you a little gift. It could maybe even be my book.-->
+<!--If you are reading this code you are won the prize. Pat your self on the back and send me an email crbecker1@gmail.com subject: Learn HCI easter egg along with your mailing address and I will send you a little gift. It could maybe even be my book.-->
 
 <!--
 <nav class="navigation-tab">
@@ -109,6 +152,8 @@
 </nav>
 -->
 
+<!-- Nav experiment
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container-fluid">
 	  <a class="navbar-brand scrollto" href="#intro">Learn HCI</a>
@@ -143,26 +188,61 @@
 	  </div>
 	</div>
   </nav>
+-->
 
 <header id="intro">
-	<div class="container">
-			<div class="col-md-6 col-sm-12 wow animated fadeInUp">
-				<div class="intro-book">
-					<img src="img/Learn-HCI-1.png" alt="Learn HCI cover">
-				</div>
-			</div>
-			<div class="col-md-6 intro-text hidden-sm hidden-xs wow animated fadeInUp">
-				<h1 class="heading">Learn Human-Computer Interaction</h1>
-				<h3 class="subheading">Solve human problems and focus on rapid prototyping and validating solutions through user testing</h3>
-				<p>Explore fundamentals, strategies, and emerging techniques in the field of human-computer interaction to enhance how users and computers interact. Explore various HCI techniques and methodologies to enhance the user experience. 
-					</p>
-				<a href="#book" class="scrollto btn btn-white">About The Book</a>
-				<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-ebook/dp/B086LGDWFT/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1602444819&sr=8-1" class="btn btn-light">Purchase eBook<span class="price">$24.59</span></a>
-				<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-dp-1838820329/dp/1838820329/ref=mt_other?_encoding=UTF8&me=&qid=1602444819" class="btn btn-orange btn-lg">Purchase Print Book<span class="price">$39.99</span></a>
-			</div>
-	</div>
-</header>
 
+	<div class="navbar-wrap">
+	<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+	  		<a class="navbar-brand" href="#">
+				  <!--
+				<img src="img/logo-2.png" width="100" height="50" class="d-inline-block align-top" alt="" loading="lazy"> -->
+			Learn HCI</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+	  <div class="collapse navbar-collapse" id="main_nav">
+	  	
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#book">About the Book</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#reviews">Reviews</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#author">About the Author</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#final">Get the Book</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#contact">Contact Me</a>
+				</li>
+			</ul>
+	  	</div> <!-- navbar-collapse.// -->
+		</div> <!-- container.// -->
+	</nav>
+
+	<div class="container">
+		<div class="col-md-6 col-sm-12 wow animated fadeInUp">
+			<div class="intro-book">
+				<img src="img/Learn-HCI-1.png" alt="Learn HCI cover">
+			</div>
+		</div>
+		<div class="col-md-6 intro-text hidden-sm hidden-xs wow animated fadeInUp">
+			<h1 class="heading">Learn Human-Computer Interaction</h1>
+			<h3 class="subheading">Solve human problems and focus on rapid prototyping and validating solutions through user testing</h3>
+			<p>Explore fundamentals, strategies, and emerging techniques in the field of human-computer interaction to enhance how users and computers interact. Explore various HCI techniques and methodologies to enhance the user experience. 
+				</p>
+			<a href="#book" class="scrollto btn btn-white">About The Book</a>
+			<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-ebook/dp/B086LGDWFT/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1602444819&sr=8-1" class="btn btn-light">Purchase eBook<span class="price">$24.59</span></a>
+			<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-dp-1838820329/dp/1838820329/ref=mt_other?_encoding=UTF8&me=&qid=1602444819" class="btn btn-orange btn-lg">Purchase Print Book<span class="price">$39.99</span></a>
+		</div>
+	</div>
+
+</header>
 
 <section id="book">
 	<div class="container">
@@ -206,7 +286,8 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center wow animated fadeInUp">
 				<p class="white">Explore fundamentals, strategies, and emerging techniques in the field of human-computer interaction to enhance how users and computers interact</p>
-				<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-ebook/dp/B086LGDWFT/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1602444819&sr=8-1" class="btn btn-light btn-lg">Purchase on Amazon</a>
+				<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating-ebook/dp/B086LGDWFT/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1602444819&sr=8-1" class="btn btn-light btn-lg">Purchase from Amazon</a>
+				<a href="https://www.packtpub.com/product/learn-human-computer-interaction/9781838820329" class="btn btn-dark btn-lg">Purchase from Packt Publishing</a>
 			</div>
 		</div>
 	</div>
@@ -220,14 +301,14 @@
 			</div>
 			<div class="col-sm-6 text-right text-left-mobile">
 				<div class="rate-amount text-right">
-					4/5 <span>(16 Reviews)</span>
+					5/5 <span>(5 Reviews)</span>
 				</div>
 				<div class="rating">
 					<span class="rate active"></span>
 					<span class="rate active"></span>
 					<span class="rate active"></span>
 					<span class="rate active"></span>
-					<span class="rate"></span>
+					<span class="rate active"></span>
 				</div>
 			</div>
 		</div>
@@ -235,7 +316,6 @@
 			<div class="owl-reviews">
 				<div class="item">
 					<div class="review text-center wow animated fadeInUp">
-						<img src="img/reviewers/1.png" class="reviewer-pic" alt="">
 						<h4 class="subheading reviewer-name">Mat Astengo</h4>
 						<h6 class="subheading muted reviewer-city">Fullerton, CA</h6>
 						<div class="rating">
@@ -246,13 +326,13 @@
 							<span class="rate active"></span>
 						</div>
 						<p class="small">Chris was my former instructor and if this excellent resource for anyone who is looking to get into HCI or keep learning new skills.</p>
+						<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating/product-reviews/1838820329/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews" class="btn btn-light sample-button btn-sm">see review</a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="review text-center wow animated fadeInUp">
-						<img src="img/reviewers/2.png" class="reviewer-pic" alt="">
-						<h4 class="subheading reviewer-name">Paul K.</h4>
-						<h6 class="subheading muted reviewer-city">New York, NY</h6>
+						<h4 class="subheading reviewer-name">David Chan</h4>
+						<h6 class="subheading muted reviewer-city">Santa Monica, CA</h6>
 						<div class="rating">
 							<span class="rate active"></span>
 							<span class="rate active"></span>
@@ -260,7 +340,23 @@
 							<span class="rate active"></span>
 							<span class="rate active"></span>
 						</div>
-						<p class="small">Blah, blah, blah.</p>
+						<p class="small">This book goes deep on HCI while remaining reader friendly. I especially appreciate the "challenges" found throughout the book as a guided way to get hands on with the material.</p>
+						<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating/product-reviews/1838820329/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews" class="btn btn-light sample-button btn-sm">see review</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review text-center wow animated fadeInUp">
+						<h4 class="subheading reviewer-name">Meg Dunkerley</h4>
+						<h6 class="subheading muted reviewer-city">North Hampshire, MA</h6>
+						<div class="rating">
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+						</div>
+						<p class="small">I'm so excited about this book! It's so practical and I think the exercises will be super helpful. If you're interested in ux, hci, or ui, this is a go-to.</p>
+						<a href="https://www.amazon.com/Learn-Human-Computer-Interaction-prototyping-validating/product-reviews/1838820329/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews" class="btn btn-light sample-button btn-sm">see review</a>
 					</div>
 				</div>
 			</div>
@@ -269,13 +365,44 @@
 </section>
 
 <hr> 
+<section id="author">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 text-left">
+				<h2 class="heading">About the Author</h2>
+			</div>
+	
+			<div class="col-md-6">
+				<div class="row author">
+					<div class="col-sm-6">
+						<img src="img/author-2.png" alt="Chris R. Becker Author or Learn HCI" class="pic">
+					</div>
+					<div class="col-sm-8 author-name">
+						<h2 class="heading wow animated fadeInUp">Christopher Reid Becker</h2>
+						<h4 class="subheading muted wow animated fadeInUp">Lead Curriculum Architect, Sr. UX Designer, Educator, Author.</h4>
+					</div>
+					<div class="col-sm-6">
+						<div class="social">
+							<a href="https://twitter.com/cbecker" class="twitter h3"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.linkedin.com/in/chrisrbecker/" class="linkedin h3"><i class="fa fa-linkedin"></i></a>
+							<a href="https://dribbble.com/crbecker1" class="dribbble h3"><i class="fa fa-dribbble"></i></a>
+							<a href="https://medium.com/@cbecker" class="Medium h3"><i class="fa fa-share"></i></a>
+							<a href="http://www.chrisrbecker.com/" class="h4"> Portfolio: www.chrisrbecker.com </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <section id="author">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
+				<!--
 				<div class="row author">
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<img src="img/author-2.png" alt="Chris R. Becker Author or Learn HCI" class="pic">
 					</div>
 					<div class="col-sm-8 author-name">
@@ -283,6 +410,7 @@
 						<h4 class="subheading muted wow animated fadeInUp">Lead Curriculum Architect, Sr. UX Designer, Educator, Author.</h4>
 					</div>
 				</div>
+				-->
 				<div class="row">
 					<div class="col-md-12">
 						<h3 class="subheading gray wow animated fadeInUp">Human Computer-Interaction is a growing field.</h3>
@@ -298,13 +426,13 @@
 					<div class="location">
 						<h4 class="heading wow animated fadeInUp">Public Presentation, <span class="light">Los Angeles, CA, USA</span></h4>
 						<div class="date">
-							<i class="fa fa-calendar"></i> 06/20/2015
+							<i class="fa fa-calendar"></i> 2021
 						</div>
 						<div class="time">
-							<i class="fa fa-clock-o"></i> 8:00 PM
+							<i class="fa fa-clock-o"></i> TBD
 						</div>
 						<div class="directions">
-							<a href="https://www.google.com/maps/dir/760+West+Genesee+Street+Syracuse+NY+13204/314+Avery+Avenue+Syracuse+NY+13204" class="get-direction" target="_blank" data-title="Get Directions"><i class="fa fa-compass"></i></a>
+							<a href="#" target="_blank" data-title="Get Directions"><i class="fa fa-compass"></i></a>
 						</div>
 					</div>
 				</div>
@@ -332,6 +460,9 @@
 <section id="contact">
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-6 text-left">
+				<h2 class="heading">Contact the Author</h2>
+			</div>
 			<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details">
 				<h3 class="heading no-margin wow animated fadeInUp">Contact Author</h3>
 				<h4 class="subheading muted no-margin wow animated fadeInUp">Say hi or to request a speaking engagement.</h4>
